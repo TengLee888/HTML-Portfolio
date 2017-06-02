@@ -1,0 +1,247 @@
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  Font Style      -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+
+
+p {
+    color: #4E4F50;
+    font-family: sans-serif;
+}
+
+
+.navbar-nav a {
+  display: inline-block;
+  text-align: center;
+  color: #cfcfcf;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+
+.bannerBox p {
+  font-family: serif;
+  color: #303132;
+  font-size: 60px;
+  font-weight: bold;
+  margin: auto;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+.shopNow p {
+    color: #E7E7E7;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px auto;
+  }
+
+
+.freeShipping p {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 5px;
+  font-weight: 100;
+  line-height: 50px;
+}
+
+
+.yearRound {
+  font-family: serif;
+  color: #303132;
+  font-size: 40px;
+  font-weight: bold;
+  margin: auto;
+  letter-spacing: 15px;
+}
+
+
+.dash {
+  margin: 20px;
+}
+
+
+.mustHave {
+  margin-top: 2rem;
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-weight: 100;
+}
+
+
+.description p {
+  color: #E7E7E7;
+  line-height: 59px;
+  font-weight: 100;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0;
+  }
+
+
+footer p {
+  margin: 5px 0;
+  color: #cfcfcf;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+
+.allRight {
+  text-align: center;
+}
+
+
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  Navigation bar  -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+
+
+header {
+  background-color: #535152;
+}
+
+
+.navbar .container{
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar-brand {
+  float: left;
+  align-items: center;
+}
+
+
+.bag {
+    float: right;
+}
+
+
+
+
+.navbar-nav li {
+  /*display: inline-block;*/
+  float: left;
+  padding: 35px;
+}
+
+
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  Content  -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+
+
+.bannerImg {
+  position: relative;
+  background-image: url('img/cover.jpg');
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.bannerBox {
+  position: absolute;
+  background: rgba(255,255,255,0.5);
+  top: 350px;
+  left: 25%;
+  width: 50%;
+  height: 200px;
+  padding-top: 20px;
+}
+
+
+.shopNow {
+  width: 300px;
+  background-color: #303132;
+  margin: 8px auto 15px;
+  text-align: center;
+  padding: 1px;
+}
+
+
+.freeShipping {
+  background-color: #E3E3E3;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+
+.yearRoundBox {
+  padding: 80px;
+  text-align: center;
+}
+
+
+.merchandiseBox {
+  width: 100%;
+}
+
+
+.merchandise {
+  float: left;
+  background-color: #303132;
+  width: 31.33%;
+  height: 480.92px;
+  margin: 0 1%;
+}
+
+
+.description {
+  margin: 0;
+  text-align: center;
+}
+
+
+.merchandise img{
+  width: 100%;
+  height: auto;
+}
+
+
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  Footer  -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+
+
+footer {
+  background-color: #535152;
+  padding: 80px 80px 60px;
+
+  margin-top: 80px;
+}
+
+
+#email {
+  background-color: transparent;
+  width: 100%;
+  height: 30px;
+  border: 2px solid #cfcfcf;
+  margin: 0 auto;
+}
+
+#button {
+  float: right;
+  background-color: #d3d3d3;
+  margin: 5px 3px;
+  padding: 10px;
+  color: #4E4F50;
+  font-size: 15px;
+  border-radius: 1px;
+  border: 0;
+}
+
+
+.contact {
+  padding-left: 120px;
+}
+
+
+.allRight {
+  margin-top: 50px;
+}
