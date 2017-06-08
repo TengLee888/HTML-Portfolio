@@ -19,7 +19,7 @@ p {
 }
 
 
-.bannerBox p {
+.bannerCenterBox p {
   font-family: serif;
   color: #303132;
   font-size: 60px;
@@ -135,16 +135,17 @@ header {
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 
 
-.bannerImg {
-  position: relative;
-  background-image: url('img/cover.jpg');
-  height: 650px;
-  background-size: cover;
-  background-position: center;
+.banner img {
+  /*position: relative;*/
+  /*background-image: url('img/cover.jpg');*/
+  width: 100%;
+  height: auto;
+  /*background-size: cover;*/
+  /*background-position: center;*/
 }
 
 
-.bannerBox {
+.bannerCenterBox {
   position: absolute;
   background: rgba(255,255,255,0.5);
   top: 350px;
