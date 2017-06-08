@@ -1,3 +1,7 @@
+div {
+  border: red 1px solid;
+}
+
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--  Navigation bar  -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
@@ -8,14 +12,13 @@
 
 
 .navbar-brand {
-  margin: auto;
   float: left;
-  text-align: center;
 }
 
 
 .nav{
-  padding: 40px;
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -26,8 +29,8 @@
 
 .navbar-nav a {
   display: inline-block;
-  position: relative;
   width: 16%;
+  line-height: 102px;
   text-align: center;
   color: black;
   font-size: 16px;
@@ -39,36 +42,114 @@
 /*<!--   Content   -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 
-#upper{
+body {
+  margin: 0;
+}
+
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+p {
+ font-family: sans-serif;
+ font-size: 18px;;
+ color: #707C80;
+
+}
+
+
+img { display:block; }
+
+
+.contentBackground{
   background-color: #fdfdfd;
 }
 
+.upperContent {
+  display: flex;
+}
 
-.left, .right{
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+.upperLeft, .upperRight{
+  flex: 1;
+  padding: 50px 20px;
+}
+
+
+
+.upperLeft h1 {
+  font-size: 80px;
+  margin: 0;
+  font-family: sans-serif;
 
 }
 
 
-#upper .right {
-  text-align: center;
+.upperLeft h2 {
+  margin: 0;
+  font-family: sans-serif;
 }
 
 
 .button{
+  width: 225px;
+  margin: 0 auto;
+}
+
+
+.button img {
+  border-radius: 6px;
+}
+
+
+.button p {
+  margin: 0
+}
+
+
+.upperRight {
   text-align: center;
+}
+
+
+.upperRight img{
+  width: 80%;
+  height: auto;
+}
+
+
+.lowerContentTitle {
+  font-family: sans-serif;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 
-.lowerTitle {
-  padding-top: 50px;
+.lowerContent {
+  display: flex;
 }
 
 
-.lowerTitle h2 {
-  margin-bottom: 0px;
+.lowerLeft {
+  flex: 1;
+  padding-right: 40px;
+  font-size: 20px;
+}
+
+
+.lowerRight {
+  flex: 1;
+  padding-left: 40px;
+  font-size: 20px;
+}
+
+
+.lowerContent p {
+  text-align: justify;
 }
 
 
@@ -82,12 +163,23 @@ footer {
 
 
 .copyright {
-  float: left;
+  display: flex;
   padding-top: 50px;
+  justify-content: space-between;
 }
 
 
-footer .logolink {
-  float: right;
-  padding-top: 50px;
+.copyright p {
+  display: inline-block;
+  font-size: 12px;
+}
+
+
+.copyright img {
+  display: inline-block;
+}
+
+
+.copyright a {
+  text-decoration: none;
 }
