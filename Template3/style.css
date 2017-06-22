@@ -1,78 +1,46 @@
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
-/*<!--    Font Style    -->*/
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-
-
-.coverDescription h3 {
-    color: #e3e699;
-}
-
-.coverDescription p {
-    color: #ffffff;
-    margin-bottom: 0;
-}
-
-
-.middleContent h5{
-  color: #e3e699;
-}
-
-
-.middleContent p {
-  color: #ffffff;
-  margin: 0;
-}
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--     Header       -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 
 
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #ffffff;
   padding: 20px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 
-.navbar {
+.menuStyle {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+.menuItemStyle {
+  display: inline;
+  background-color: rgb(75, 75, 75);
   padding: 0;
 }
 
 
-.nav {
-  display: -webkit-flex;
-  display: flex;
+.menuItemStyle  a{
+  display: block;
+  color:  #f0f2c9;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 10px 0;
 }
 
 
-
-.nav li {
-  -webkit-flex: 1;
-          flex: 1;
-  text-align: center;
-  background-color: rgb(75, 75, 75);
-}
-
-
-.nav a:hover {
+.menuStyle a:hover {
   background-color: rgb(213, 237, 207);
   color: #1b330c;
 }
 
-
-.nav a {
-  display: block;
-  color: #f0f2c9;
-  font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 200;
-    letter-spacing: 2px;
-    text-decoration: none;
-    padding: 10px 0;
-}
 
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--     Content      -->*/
@@ -87,23 +55,27 @@ body {
 
 .greenBackground {
   background-color: #1a6c16;
-  width: 1140px;
-  padding: 0 20px;
   margin: 0 auto;
 }
 
 
-.coverDiv  {
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  upperContent    -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+
+
+.banner  {
   position: relative;
-}
-
-.coverDiv img {
+  background-image: url(img/gardening1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 431px;
   width: 100%;
-  height: auto;
 }
 
 
-.coverDescription {
+.bannerDescription {
   position: absolute;
   background-color: rgba(10%, 10%, 10%, 0.7);
   bottom: 0;
@@ -111,17 +83,25 @@ body {
 }
 
 
-.middleContent, .middleItem {
-  display: -webkit-flex;
-  display: flex;
+.bannerDescription h3 {
+    color: #e3e699;
 }
+
+.bannerDescription p {
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  middleContent   -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
 
 
 .middleItem {
-  -webkit-flex: 1;
-          flex: 1;
-  padding: 20px;
+  padding: 20px 15px;
 }
+
 
 .middleItem img {
     border: solid 1px #ffffff;
@@ -129,6 +109,22 @@ body {
     width: 88px;
     height: 89px;
 }
+
+
+.middleContent h5{
+  color: #e3e699;
+}
+
+
+.middleContent p {
+  color: #ffffff;
+  margin: 0;
+}
+
+
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  lowerContent    -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
 
 
 .lowerContent {
@@ -145,13 +141,13 @@ body {
 }
 
 
-.lowerContent  .col-md-3 img {
+.featureItem img {
   width: 100%;
   height: auto;
 }
 
 
-.lowerContent .col-md-3 h4 {
+.featureItem h4 {
   margin: 20px 0 10px 0;
   color: #836145;
   font-size: 16px;
@@ -160,22 +156,27 @@ body {
 
 
 
-.lowerContent .col-md-3 p{
+.featureItem p{
   margin-bottom: 25px;
 }
 
 
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--tipsOfTheWeek-->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+
+
 .tipsOfTheWeek {
-  display: flex;
   border-top: 2px solid #dce9d4;
   margin-top: 20px;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
-.tipsdescription {
-  -webkit-flex: 1;
-          flex: 1;
-  margin-left: 20px;
+
+.tipsImg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 
@@ -194,13 +195,12 @@ body {
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 
 
-footer {
-  display: flex;
+.noMargin {
+  margin: 0;
 }
 
 
-.aboutDiv {
-  flex: 1;
+footer .aboutItem {
   background-color: #dce9d4;
   padding: 20px;
   border-top: solid 2px #b8d0aa;
@@ -208,13 +208,13 @@ footer {
 }
 
 
-.aboutDiv h4 {
+.aboutItem h4 {
   color: #8c8c8c;
   margin-bottom: 20px;
 }
 
 
-.aboutDiv p {
+.aboutItem p {
   color: #8c8c8c;
   margin: 0;
 }
