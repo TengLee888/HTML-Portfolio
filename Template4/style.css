@@ -3,7 +3,7 @@
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 
 
-h1, h2, h3, h4, h5, h6, li, .chairDetails a,.time p , .signUpBtn , .bottomBox{
+h1, h2, h3, h4, h5, h6, li, .chairDetails a,.time p , .signUpBtn , .innerBox{
   font-family: "Oswald";
 }
 
@@ -19,41 +19,38 @@ header{
   border-bottom: 1px solid #ffffff;
 }
 
-/*
-header .container {
-  display: flex;
-  align-items: center;
-}*/
-
-
-header img {
-margin: 20px -15px;
+.headerStyle {
+  padding: 20px 0;
 }
 
 
 header ul {
-  display: inline-block;
-  float: right;
+  padding-left: 0;
+  margin: 0;
 }
-
-
 
 
 header li {
   display: inline-block;
-  padding: 50px 0 20px ;
-  margin-right: -15px;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 576px) {
+    header li {
+        display:block;
+        text-align: center;
+    }
 }
 
 
 header li a {
   color: #ffffff;
-  text-decoration: none;
   font-family: "Oswald";
   font-size: 16px;
-  padding: 15px 20px;
-  text-transform: uppercase;
+  padding: 0 15px;
 }
+
 
 header li a:hover{
   color: #ffc947;
@@ -62,7 +59,7 @@ header li a:hover{
 
 
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
-/*<!--     Content      -->*/
+/*<!--upperContent      -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 
 
@@ -73,19 +70,23 @@ body {
 
 
 .upperContent {
-  padding: 0;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
 
 
-.col-md-6 {
-  padding: 0;
+.chairImgBox {
+  position: relative;
+  background-image:url(img/chair.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 
-.chairImg {
-  position: relative;
+@media screen and (max-width: 576px) {
+  .chairImgBox {
+    height: 400px;
+  }
 }
 
 
@@ -94,11 +95,6 @@ body {
   bottom: 30px;
   right: 30px;
   text-align: center;
-}
-
-
-.chairImg img {
-  width: 100%;
 }
 
 
@@ -140,20 +136,15 @@ body {
 
 
 .chairDescriptionBox {
-  position: relative;
+  background-image: url(img/bg-pattern.jpg);
+  background-size: cover;
+  padding: 70px;
 }
 
 
 .chairDescriptionBox img {
   width: 100%;
   height: 100%;
-}
-
-
-.chiarDescription {
-  position: absolute;
-  margin: 70px;
-  top: 0;
 }
 
 
@@ -173,12 +164,17 @@ body {
 }
 
 
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  middleContent   -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+
+
 .middleContent img {
   width: 100%;
 }
 
 
-.middleContent .col-md-4 {
+.middleLeft, .middleCenter, .middleRight {
   padding: 0;
 }
 
@@ -201,17 +197,19 @@ body {
 
 .middleContent h5 {
   color: #ffc947;
-  /*margin: 25px;*/
-
 }
 
 
 .middleContent p {
-  /*margin: 25px;*/
   color: #fff;
   font-size: 14px;
   line-height: 22px;
 }
+
+
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*<!--  bottomContent   -->*/
+/*<!--~~~~~~~~~~~~~~~~~~-->*/
 
 
 .bottomContent {
@@ -241,59 +239,60 @@ body {
 
 
 .bottomRightBox {
-  padding: 40px 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 
 .bottomRightInner {
-  display: -webkit-flex;
-  display: flex;
 }
 
 
-.bottomBox {
-  flex: 1;
-  margin: 20px;
+.innerBox {
+  overflow: hidden;
+  margin: 15px;
   background-color: #ddd;
 }
 
 
-.bottomBoxDetails {
+.innerBoxDetails {
+  overflow: hidden;
   float: left;
   width: 50%;
+  height: auto;
   padding: 15px;
 }
 
 
-
-.bottomBox img {
+.innerBox img {
   float: right;
   width: 50%;
   height: auto;
 }
 
 
-.bottomBoxDetails p {
+.innerBoxDetails p {
   font-size: 16px;
 }
 
 
-.bottomBoxDetails h6 {
+.innerBoxDetails h6 {
   color: #340000;
   line-height: 1.25em;
   padding-bottom: 35px;
 }
 
 
-.bottomBoxDetails a{
+.innerBoxDetails a{
   color: #340000;
 }
-
 
 
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--      Footer      -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
+
+
 footer {
   background-color: #e7b32e;
   padding-top: 40px;
@@ -377,6 +376,14 @@ footer .row {
 }
 
 
+@media screen and (max-width:576px) {
+  .footerLeft, .footerRight {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
 .newsLetter {
   background: url(img/separator-dark.png) repeat-x left bottom;
 }
@@ -445,8 +452,6 @@ footer .row {
 
 .copyRight {
   padding-top: 5px;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 
@@ -460,9 +465,17 @@ footer .row {
   display: inline-block;
 }
 
+
+@media screen and (max-width:576px) {
+  .copyRight p{
+    padding-left: 15px;
+  }
+}
+
+
 .copyRight ul {
-  float: right;
   list-style: none;
+  padding: 0;
 }
 
 
