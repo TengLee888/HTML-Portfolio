@@ -1,0 +1,72 @@
+// header
+@import "modules/color";
+
+
+// body, section, header, footer, div, ul, li, a, p {
+//   border: 1px red solid;
+// }
+
+
+.blackTop {
+  background-color: #1c1c1c;
+  height: 120px;
+  width: 100%;
+}
+
+.titleBg {
+  background-image: url(../images/subbg.gif);
+  background-repeat: repeat;
+  margin-top: -97px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .blackTop {
+    height: 180px;
+  }
+  .titleBg {
+    margin-top: -150px;
+  }
+}
+
+
+
+
+
+header img{
+  margin: 40px 0;
+}
+
+
+.mediaIcon {
+  text-align: right;
+  ul {
+    margin-bottom: 5px;
+  }
+  li {
+    display: inline;
+    list-style: none;
+  }
+  a {
+    display: inline-block;
+    background: url(../images/social.png) no-repeat;
+    height: 27px;
+    width: 27px;
+    margin-left: 5px;
+  }
+  .twitter {
+    background-position: -37px 0;
+  }
+  .pintrest {
+    background-position: -74px 0;
+  }
+  .website {
+    background-position: -111px 0;
+  }
+  .broadcast {
+    background-position: -150px 0;
+  }
+  p {
+    margin: 0;
+  }
+}

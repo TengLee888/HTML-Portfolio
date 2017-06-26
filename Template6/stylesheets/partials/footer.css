@@ -1,0 +1,139 @@
+/* line 5, ../../sass/partials/footer.scss */
+.adjustPosition {
+  margin-top: 50px;
+  margin-bottom: -250px;
+}
+
+/* line 11, ../../sass/partials/footer.scss */
+.testimonials p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+/* line 17, ../../sass/partials/footer.scss */
+.testimonialsMessage {
+  position: relative;
+  padding: 15px;
+  background-color: #e7e7e7;
+  border-radius: 5%;
+}
+
+/* line 25, ../../sass/partials/footer.scss */
+.arrow-down {
+  position: absolute;
+  transform: translate(-50%, 0%);
+  width: 0;
+  left: 30px;
+  bottom: -20px;
+  border-bottom: 40px solid transparent;
+  border-left: 60px solid #e7e7e7;
+  z-index: 1;
+}
+
+/* line 37, ../../sass/partials/footer.scss */
+.testimonialsDetails {
+  margin-top: 40px;
+}
+/* line 40, ../../sass/partials/footer.scss */
+.testimonialsDetails img {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 48, ../../sass/partials/footer.scss */
+.smart-green {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  padding: 0;
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #666;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+/* line 61, ../../sass/partials/footer.scss */
+.smart-green label {
+  display: block;
+  margin: 0px 0px 5px;
+}
+
+/* line 67, ../../sass/partials/footer.scss */
+.smart-green input[type="text"], .smart-green input[type="email"], .smart-green textarea, .smart-green select {
+  color: #555;
+  height: 30px;
+  line-height: 15px;
+  width: 100%;
+  padding: 0px 0px 0px 10px;
+  margin-top: 2px;
+  border: 1px solid #E5E5E5;
+  background: #e7e7e7;
+  outline: 0;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+  box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+  font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+
+/* line 81, ../../sass/partials/footer.scss */
+.smart-green textarea {
+  height: 100px;
+  padding-top: 10px;
+}
+
+/* line 87, ../../sass/partials/footer.scss */
+.smart-green .button {
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-border-radius: 5px;
+  border: none;
+  padding: 10px 25px 10px 25px;
+  margin: 10px 10px 20px 0;
+  color: #FFF;
+}
+
+/* line 97, ../../sass/partials/footer.scss */
+.smart-green .button:hover {
+  background-color: #69c000;
+}
+
+/* line 103, ../../sass/partials/footer.scss */
+.flickr div {
+  float: left;
+  width: 25%;
+  padding: 2px;
+}
+/* line 109, ../../sass/partials/footer.scss */
+.flickr img {
+  width: 100%;
+}
+
+/* line 115, ../../sass/partials/footer.scss */
+.copyRight {
+  overflow: auto;
+  margin: 8px 0;
+}
+/* line 118, ../../sass/partials/footer.scss */
+.copyRight p {
+  color: #616161;
+}
+/* line 122, ../../sass/partials/footer.scss */
+.copyRight a {
+  color: #616161;
+  text-decoration: none;
+}
+/* line 125, ../../sass/partials/footer.scss */
+.copyRight a:hover {
+  color: #69c000;
+}
+
+/* line 133, ../../sass/partials/footer.scss */
+.blackBottom {
+  position: relative;
+  background-color: #1c1c1c;
+  height: 250px;
+  width: 100%;
+  z-index: -1;
+}

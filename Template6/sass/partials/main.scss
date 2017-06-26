@@ -1,0 +1,28 @@
+//mainContent
+@import "modules/color";
+
+
+body {
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat;
+}
+
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
+.whiteBackground {
+  background-image: url(../images/subbg.gif);
+  box-shadow: 0px 0px 7px #888888;
+}
+
+
+.widerPadding {
+  padding-left: 45px;
+  padding-right: 45px;
+}

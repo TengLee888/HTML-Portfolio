@@ -1,0 +1,35 @@
+/* line 5, ../../sass/partials/banner.scss */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  background-image: url(../images/banner.png);
+  background-size: cover;
+}
+/* line 16, ../../sass/partials/banner.scss */
+.banner h1 {
+  font-size: 50px;
+  font-style: italic;
+}
+/* line 21, ../../sass/partials/banner.scss */
+.banner h5 {
+  letter-spacing: 3px;
+}
+/* line 25, ../../sass/partials/banner.scss */
+.banner i {
+  display: block;
+  font-size: 1rem;
+}
+
+/* line 31, ../../sass/partials/banner.scss */
+.profolioTitle {
+  color: #fff;
+  width: 200px;
+  padding: 25px 0;
+  margin: 0 auto;
+  background-color: #FF0048;
+  letter-spacing: 3px;
+}

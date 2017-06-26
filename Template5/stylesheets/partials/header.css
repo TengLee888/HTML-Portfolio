@@ -1,0 +1,21 @@
+/* line 5, ../../sass/partials/header.scss */
+header {
+  background-color: #360836;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+/* line 12, ../../sass/partials/header.scss */
+header a {
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  color: #FF5E8B;
+  text-decoration: none;
+}
+/* line 19, ../../sass/partials/header.scss */
+header a:hover {
+  color: #FFF;
+  text-decoration: none;
+}

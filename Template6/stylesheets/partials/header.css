@@ -1,0 +1,72 @@
+/* line 10, ../../sass/partials/header.scss */
+.blackTop {
+  background-color: #1c1c1c;
+  height: 120px;
+  width: 100%;
+}
+
+/* line 16, ../../sass/partials/header.scss */
+.titleBg {
+  background-image: url(../images/subbg.gif);
+  background-repeat: repeat;
+  margin-top: -97px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  /* line 24, ../../sass/partials/header.scss */
+  .blackTop {
+    height: 180px;
+  }
+
+  /* line 27, ../../sass/partials/header.scss */
+  .titleBg {
+    margin-top: -150px;
+  }
+}
+/* line 36, ../../sass/partials/header.scss */
+header img {
+  margin: 40px 0;
+}
+
+/* line 41, ../../sass/partials/header.scss */
+.mediaIcon {
+  text-align: right;
+}
+/* line 43, ../../sass/partials/header.scss */
+.mediaIcon ul {
+  margin-bottom: 5px;
+}
+/* line 46, ../../sass/partials/header.scss */
+.mediaIcon li {
+  display: inline;
+  list-style: none;
+}
+/* line 50, ../../sass/partials/header.scss */
+.mediaIcon a {
+  display: inline-block;
+  background: url(../images/social.png) no-repeat;
+  height: 27px;
+  width: 27px;
+  margin-left: 5px;
+}
+/* line 57, ../../sass/partials/header.scss */
+.mediaIcon .twitter {
+  background-position: -37px 0;
+}
+/* line 60, ../../sass/partials/header.scss */
+.mediaIcon .pintrest {
+  background-position: -74px 0;
+}
+/* line 63, ../../sass/partials/header.scss */
+.mediaIcon .website {
+  background-position: -111px 0;
+}
+/* line 66, ../../sass/partials/header.scss */
+.mediaIcon .broadcast {
+  background-position: -150px 0;
+}
+/* line 69, ../../sass/partials/header.scss */
+.mediaIcon p {
+  margin: 0;
+}

@@ -1,0 +1,21 @@
+/* line 5, ../../sass/partials/profolio.scss */
+.profolio .arrow-down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #FF0048;
+  z-index: 1;
+}
+/* line 18, ../../sass/partials/profolio.scss */
+.profolio .profolio-item {
+  padding: 0;
+}
+/* line 22, ../../sass/partials/profolio.scss */
+.profolio .profolio-item img {
+  width: 100%;
+  height: auto;
+}

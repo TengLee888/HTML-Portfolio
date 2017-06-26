@@ -1,0 +1,63 @@
+// Footer
+@import "modules/color";
+
+
+footer {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  color: #E4E3E3;
+  padding-bottom: 15px;
+  
+  @media screen and (min-width: 960px){
+    .article{
+    padding: 80px;
+    }
+  }
+
+  h2 {
+  font-size: 50px;
+  font-weight: 300;
+  }
+
+  p {
+  margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 576px) {
+    .articleRight {
+      margin-top: 200px;
+      padding-bottom: 0;
+    }
+  }
+
+  a {
+    display: block;
+    color: #000;
+    width: 210px;
+    padding: 10px 0;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    text-decoration: none;
+  }
+}
+
+
+.dot {
+  margin: 60px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+
+.copyRight {
+  text-align: center;
+
+  p {
+    padding: 20px;
+  }
+
+  span {
+    color: $pink;
+  }
+}

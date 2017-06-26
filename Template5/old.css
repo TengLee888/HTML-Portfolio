@@ -1,14 +1,7 @@
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
-/*<!--    Font Style    -->*/
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-
-
-
-
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--  Navigation bar  -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
-header {
+/*header {
   background-color: #360836;
   text-align: center;
   position: fixed;
@@ -29,13 +22,13 @@ header a:hover {
   color: #FFF;
   text-decoration: none;
 
-}
+}*/
 
 
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--     Content      -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
-.bannerBg {
+/*.bannerBg {
   background-image: url(img/banner.png);
   background-size: cover;
 }
@@ -66,7 +59,7 @@ header a:hover {
 .banner i {
     display: block;
     font-size: 1rem;
-}
+}*/
 
 
 
@@ -84,7 +77,7 @@ header a:hover {
 }
 
 
-.arrow-down {
+/*.arrow-down {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -94,21 +87,21 @@ header a:hover {
   border-right: 20px solid transparent;
   border-top: 20px solid #FF0048;
   z-index: 1;
-}
+}*/
 
 
 
-.profolio-item {
+/*.profolio-item {
   padding: 0;
 }
 
 .profolio-item img {
   width: 100%;
   height: auto;
-}
+}*/
 
 
-.teamMember {
+/*.teamMember {
   background-color: #fff;
   padding-top: 100px;
   padding-bottom: 45px;
@@ -131,11 +124,12 @@ header a:hover {
   margin: 50px;
   text-align: center;
   letter-spacing: 3px;
-}
+}*/
 
 
-.teamMember .container {
+/*.teamMember .container {
   width: 1000px;
+  margin: 0 auto;
 }
 
 
@@ -172,7 +166,7 @@ header a:hover {
   text-align: center;
   background-color: #000;
   text-decoration: none;
-}
+}*/
 
 
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
