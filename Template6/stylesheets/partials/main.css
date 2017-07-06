@@ -23,3 +23,8 @@ h3 {
   padding-left: 45px;
   padding-right: 45px;
 }
+
+/* line 31, ../../sass/partials/main.scss */
+a {
+  cursor: pointer;
+}

@@ -166,6 +166,11 @@ h3 {
   padding-right: 45px;
 }
 
+/* line 31, ../sass/partials/main.scss */
+a {
+  cursor: pointer;
+}
+
 /* line 5, ../sass/partials/topContent.scss */
 .banner {
   margin-left: -15px;
@@ -406,7 +411,7 @@ h3 {
 /* line 115, ../sass/partials/footer.scss */
 .copyRight {
   overflow: auto;
-  margin: 8px 0;
+  margin: 8px -15px;
 }
 /* line 118, ../sass/partials/footer.scss */
 .copyRight p {

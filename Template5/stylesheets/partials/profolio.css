@@ -1,5 +1,5 @@
 /* line 5, ../../sass/partials/profolio.scss */
-.profolio .arrow-down {
+.arrow-down {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -10,6 +10,7 @@
   border-top: 20px solid #FF0048;
   z-index: 1;
 }
+
 /* line 18, ../../sass/partials/profolio.scss */
 .profolio .profolio-item {
   padding: 0;

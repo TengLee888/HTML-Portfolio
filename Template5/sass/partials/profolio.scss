@@ -1,20 +1,20 @@
 // profolio
 @import "modules/color";
 
+
+.arrow-down {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid $pink;
+  z-index: 1;
+}
+
 .profolio {
-  .arrow-down {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid $pink;
-    z-index: 1;
-  }
-
-
   .profolio-item {
     padding: 0;
 

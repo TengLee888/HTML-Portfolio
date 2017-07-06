@@ -2,6 +2,11 @@
 @import "modules/color";
 
 
+a {
+  cursor: pointer;
+}
+
+
 .banner {
   display: flex;
   flex-direction: column;

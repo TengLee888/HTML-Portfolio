@@ -113,7 +113,7 @@
 /* line 115, ../../sass/partials/footer.scss */
 .copyRight {
   overflow: auto;
-  margin: 8px 0;
+  margin: 8px -15px;
 }
 /* line 118, ../../sass/partials/footer.scss */
 .copyRight p {
