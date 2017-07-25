@@ -1,6 +1,16 @@
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--  Navigation bar  -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
+/*div {
+  border: 1px red solid;
+}*/
+
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 
 .navbar {
   background-color: #eeeeee;
@@ -26,11 +36,10 @@
 .navbar-nav a {
   display: inline-block;
   width: 16%;
-  line-height: 102px;
+  line-height: 108px;
   text-align: center;
   color: black;
   font-size: 16px;
-  text-decoration: none;
 }
 
 
@@ -56,9 +65,6 @@ p {
  color: #707C80;
 
 }
-
-
-img { display:block; }
 
 
 .contentBackground{
@@ -112,12 +118,6 @@ img { display:block; }
 }
 
 
-.upperRight img{
-  width: 80%;
-  height: auto;
-}
-
-
 .lowerContentTitle {
   font-family: sans-serif;
   margin-top: 50px;
@@ -166,16 +166,5 @@ footer {
 
 
 .copyright p {
-  display: inline-block;
   font-size: 12px;
-}
-
-
-.copyright img {
-  display: inline-block;
-}
-
-
-.copyright a {
-  text-decoration: none;
 }

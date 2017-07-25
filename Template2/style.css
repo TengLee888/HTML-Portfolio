@@ -1,9 +1,15 @@
+/** {
+  border: 1px red solid;
+}*/
+
+
 body {
   margin: 0;
 }
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -12,12 +18,6 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
-
-.linkBlock {
-  display: block;
-}
-
 
 
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
@@ -81,11 +81,6 @@ header {
 }
 
 
-.navbar ul {
-  list-style: none;
-}
-
-
 .navbar-nav li {
   display: inline-block;
   padding: 35px;
@@ -96,7 +91,6 @@ header {
   color: #cfcfcf;
   font-size: 20px;
   font-family: sans-serif;
-  text-decoration: none;
 }
 
 
@@ -139,7 +133,6 @@ header {
   color: #303132;
   font-size: 60px;
   font-weight: bold;
-
   margin: 20px auto;
   letter-spacing: 2px;
   text-align: center;
@@ -151,14 +144,13 @@ header {
     font-weight: 100;
     font-size: 20px;
     font-family: sans-serif;
-    margin: 10px auto;
+    margin: 10px 0;
   }
 
 
 
 .freeShipping {
   background-color: #E3E3E3;
-  margin: 0;
   text-align: center;
 }
 
@@ -232,8 +224,7 @@ header {
 
 footer {
   background-color: #535152;
-  padding: 80px 80px 60px;
-
+  padding: 80px 0 60px;
   margin-top: 80px;
 }
 
@@ -266,11 +257,6 @@ footer {
 
 .logolink, .contact {
   text-align: center;
-}
-
-
-.logolink a {
-  text-decoration: none;
 }
 
 

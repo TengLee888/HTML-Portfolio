@@ -190,23 +190,28 @@ footer a {
   background-color: #fff;
   text-decoration: none;
 }
+/* line 42, ../sass/partials/footer.scss */
+footer a:hover {
+  text-decoration: none;
+  color: #FF0048;
+}
 
-/* line 46, ../sass/partials/footer.scss */
+/* line 51, ../sass/partials/footer.scss */
 .dot {
   margin: 60px;
   letter-spacing: 10px;
   text-align: center;
 }
 
-/* line 53, ../sass/partials/footer.scss */
+/* line 58, ../sass/partials/footer.scss */
 .copyRight {
   text-align: center;
 }
-/* line 56, ../sass/partials/footer.scss */
+/* line 61, ../sass/partials/footer.scss */
 .copyRight p {
   padding: 20px;
 }
-/* line 60, ../sass/partials/footer.scss */
+/* line 65, ../sass/partials/footer.scss */
 .copyRight span {
   color: #FF0048;
 }

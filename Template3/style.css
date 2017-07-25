@@ -1,3 +1,7 @@
+/** {
+  border: 1px red solid;
+}*/
+
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--     Header       -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
@@ -31,7 +35,6 @@
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 2px;
-  text-decoration: none;
   padding: 10px 0;
 }
 
@@ -39,6 +42,7 @@
 .menuStyle a:hover {
   background-color: rgb(213, 237, 207);
   color: #1b330c;
+  text-decoration: none;
 }
 
 
@@ -61,6 +65,7 @@ body {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -109,10 +114,11 @@ a {
 
 
 .middleItem img {
-    border: solid 1px #ffffff;
-    margin-right: 20px;
-    width: 88px;
-    height: 89px;
+  float: left;
+  border: solid 1px #ffffff;
+  margin-right: 20px;
+  width: 88px;
+  height: 89px;
 }
 
 
@@ -236,7 +242,6 @@ footer .aboutItem {
 	padding-left: 30px;
 	color: #8c8c8c;
 	display: inline-block;
-  text-decoration: none;
 }
 
 a.email{

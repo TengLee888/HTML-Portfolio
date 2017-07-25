@@ -1,3 +1,8 @@
+/** {
+  border: 1px red solid;
+}*/
+
+
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--    Font Style    -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
@@ -71,6 +76,7 @@ body {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -127,7 +133,6 @@ a {
 
 
 .chairDetails a {
-  text-decoration: none;
   line-height: 34px;
   color: #966a01;
   font-size: 16px;
@@ -249,10 +254,6 @@ a {
 }
 
 
-.bottomRightInner {
-}
-
-
 .innerBox {
   overflow: hidden;
   margin: 15px;
@@ -261,7 +262,6 @@ a {
 
 
 .innerBoxDetails {
-  overflow: hidden;
   float: left;
   width: 50%;
   height: auto;

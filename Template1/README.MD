@@ -1,0 +1,32 @@
+# HTML
+### header
+- img用float left
+- ul 把剩下的空間填滿
+<br>
+
+
+### body
+- 都用flex套一套
+<br>
+
+
+### footer
+- 用display: flex，justify-content: space-between;
+<br>
+<br>
+
+
+# css
+### a
+ - ```text-decoration: none;``` a前面才不會有點
+ <br>
+
+
+### .navbar-nav li
+- 記得要display:inline;才能變成單行
+<br>
+
+
+### .navbar-nav a
+- 這裡用inline-block和width: 16%填滿剩下的空間．
+- 用line-height上下置中，text-align: center;水平置中

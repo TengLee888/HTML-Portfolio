@@ -7,7 +7,7 @@ footer {
   background-size: cover;
   color: #E4E3E3;
   padding-bottom: 15px;
-  
+
   @media screen and (min-width: 960px){
     .article{
     padding: 80px;
@@ -39,7 +39,12 @@ footer {
     text-align: center;
     background-color: #fff;
     text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      color: $pink;
+    }
   }
+
 }
 
 
