@@ -1,7 +1,6 @@
 # HTML
 ### header
-- img用float left
-- ul 把剩下的空間填滿
+- ul用了flexbox, space-between, align-items:center
 <br>
 
 

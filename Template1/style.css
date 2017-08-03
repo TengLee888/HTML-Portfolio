@@ -1,9 +1,9 @@
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
 /*<!--  Navigation bar  -->*/
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
-/*div {
-  border: 1px red solid;
-}*/
+* {
+  /*border: 1px red solid;*/
+}
 
 
 a {
@@ -12,32 +12,26 @@ a {
 }
 
 
-.navbar {
+header {
   background-color: #eeeeee;
 }
 
 
-.navbar-brand {
-  float: left;
+.flexbox {
+  display: flex;
 }
 
 
-.nav{
-  padding: 0;
-  margin: 0;
+header ul {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 
-.navbar-nav li {
-  display:inline;
-}
-
-
-.navbar-nav a {
-  display: inline-block;
-  width: 16%;
-  line-height: 108px;
-  text-align: center;
+header ul a {
   color: black;
   font-size: 16px;
 }

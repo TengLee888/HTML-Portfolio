@@ -1,6 +1,6 @@
-/** {
-  border: 1px red solid;
-}*/
+* {
+  /*border: 1px red solid;*/
+}
 
 
 body {
@@ -14,54 +14,15 @@ a {
 
 
 .container {
-  width: 1140px;
+  width: 1020px;
   margin-left: auto;
   margin-right: auto;
 }
 
 
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-/*<!--  Font Style      -->*/
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-
-
 p {
     color: #4E4F50;
     font-family: sans-serif;
-}
-
-
-
-
-
-.mustHave {
-  margin-top: 2rem;
-  font-size: 20px;
-  letter-spacing: 10px;
-  font-weight: 100;
-}
-
-
-.description p {
-  color: #E7E7E7;
-  line-height: 59px;
-  font-weight: 100;
-  font-size: 20px;
-  font-family: sans-serif;
-  margin: 0;
-  }
-
-
-footer p {
-  margin: 5px 0;
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: 100;
-}
-
-
-.allRight {
-  text-align: center;
 }
 
 
@@ -75,22 +36,35 @@ header {
 }
 
 
-.navbar .container{
+nav {
   display: flex;
   align-items: center;
 }
 
 
-.navbar-nav li {
-  display: inline-block;
-  padding: 35px;
+.navBrand {
+  padding-top: 8px;
 }
 
 
-.navbar-nav a {
-  color: #cfcfcf;
-  font-size: 20px;
+nav ul {
+  display: flex;
+  flex: 1;
+  padding: 0;
+  list-style: none;
+}
+
+
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+
+nav ul li a {
   font-family: sans-serif;
+  color: #cfcfcf;
+  font-size: 16px;
 }
 
 
@@ -108,7 +82,7 @@ header {
 }
 
 
-.bannerCenterBox {
+.banner div {
   position: absolute;
   background: rgba(255,255,255,0.5);
   top: 50%;
@@ -119,45 +93,34 @@ header {
 }
 
 
-.shopNow {
-  width: 300px;
-  background-color: #303132;
-  margin: 8px auto 15px;
-  text-align: center;
-  padding: 1px;
-}
-
-
 .centerBoxTile {
-  font-family: serif;
+  margin: 20px;
+  text-align: center;
   color: #303132;
+  font-family: serif;
   font-size: 60px;
   font-weight: bold;
-  margin: 20px auto;
   letter-spacing: 2px;
-  text-align: center;
 }
 
 
-.shopNow p {
-    color: #E7E7E7;
-    font-weight: 100;
-    font-size: 20px;
-    font-family: sans-serif;
-    margin: 10px 0;
-  }
-
+.shopNow{
+  width: 300px;
+  padding: 10px;
+  margin: 8px auto 15px;
+  background-color: #303132;
+  text-align: center;
+  color: #E7E7E7;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
 
 
 .freeShipping {
+  margin: 0;
   background-color: #E3E3E3;
   text-align: center;
-}
-
-
-
-.freeShipping p {
-  margin: 0;
   font-size: 15px;
   letter-spacing: 5px;
   font-weight: 100;
@@ -174,11 +137,11 @@ header {
 
 
 .yearRound {
-  font-family: serif;
+  margin: 0;
   color: #303132;
+  font-family: serif;
   font-size: 40px;
   font-weight: bold;
-  margin: auto;
   letter-spacing: 15px;
 }
 
@@ -188,33 +151,42 @@ header {
 }
 
 
+.mustHave {
+  margin-top: 2rem;
+  font-size: 20px;
+  letter-spacing: 10px;
+  font-weight: 100;
+}
+
+
 .flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
-.merchandise {
-  flex: 1;
+.merchandise img {
+  width: 330px;
+  height: auto;
+}
+
+
+.darkBg {
   background-color: #303132;
-  margin: 0 20px;
 }
-
-
-.greyBackground {
+.greyBg {
   background-color: rgb(231, 227, 224);
 }
 
 
-.description {
+.description  {
   text-align: center;
-}
+  color: #E7E7E7;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  }
 
-
-.merchandise img{
-  width: 100%;
-  height: auto;
-}
 
 
 /*<!--~~~~~~~~~~~~~~~~~~-->*/
@@ -229,37 +201,48 @@ footer {
 }
 
 
-.logolink, .email, .contact {
+footer p {
+  margin: 5px 0;
+  color: #cfcfcf;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+
+.email {
   flex: 1;
+  margin: 0 100px;
+}
+
+
+.logolink, .contact {
+  margin: 0 40px;
+  text-align: center;
 }
 
 
 #email {
-  background-color: transparent;
+  margin: 0 auto;
   width: 100%;
   height: 30px;
   border: 2px solid #cfcfcf;
-  margin: 0 auto;
+  background-color: transparent;
   box-sizing: border-box;
 }
 
 #button {
   float: right;
-  background-color: #d3d3d3;
-  margin: 5px 3px;
   padding: 10px;
+  margin: 5px 3px;
+  border: 0;
+  background-color: #d3d3d3;
   color: #4E4F50;
   font-size: 15px;
   border-radius: 1px;
-  border: 0;
-}
-
-
-.logolink, .contact {
-  text-align: center;
 }
 
 
 .allRight {
+  text-align: center;
   margin-top: 50px;
 }

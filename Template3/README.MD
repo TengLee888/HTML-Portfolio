@@ -4,7 +4,7 @@
 
 
 ### .menuItemStyle  a
-- 用display block再設padding高來定義高
+- 用display block撐開左右，再設padding高來定義高
 <br>
 
 
