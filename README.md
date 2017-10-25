@@ -199,6 +199,11 @@ https://codepen.io/TengLee/pen/ayYPMd
   4. 父元素没有height相关的限制； 其实这些条件也是我们消除父子元素重叠的方式。
 
 
+###  負margin
+- 增加該DOM的空間
+  - 寬：變胖   
+  - margin-top：自己往上移
+  - margin-bottom:下面的ＤＯＭ往上移
 
 ## Flexbox
 -  flex 其實是由三個屬性組合而成，依照先後順序分別是「flex-grow」、「flex-shrink」和「flex-basis」，如果 flex 只填了一個數值 ( 無單位 )，那麼預設就是以 flex-grow 的方式呈現
@@ -248,21 +253,37 @@ This removes the negative margins from .row and the horizontal padding from all 
 
 
 
+## Navigation Bar
+- https://v4-alpha.getbootstrap.com/components/navbar/
+- Navbars require a wrapping .navbar with .navbar-toggleable-* for responsive collapsing and color scheme classes.
+- .navbar-brand for your company, product, or **project name**.
+- .navbar-nav for a **full-height and lightweight** navigation (including support for dropdowns).
+- .navbar-toggler for use with our **collapse plugin** and other navigation toggling behaviors.
+- .form-inline for any form controls and actions.
+- .navbar-text for adding vertically centered strings of text.
+- .collapse.navbar-collapse for **grouping and hiding navbar contents** by a parent breakpoint.
+
+
+
 ## background
 - 越靠近螢幕，要寫在最前面，中間用逗號隔開
 - 位置用百分比代替
 - 結束時：零度是在右邊 90度是在上方
 
-線性漸層
+### 線性漸層
 ```
 background: -webkit-linear-gradient(90deg , black, purple)
 ```
 
-逕向漸層
+### 逕向漸層
+```
 background: -webkit-radial-gradient(ellipse , black, purple);
 background: -webkit-radial-gradient(circle , black, purple)
+```
 - Ellipse (this is default):
 - 越先寫的顏色越在中間
+
+
 
 
 
@@ -306,6 +327,11 @@ a {
 
 ## img
 - 水平置中：margin-left, margin-right:auto
+
+
+
+## 整齊的格子
+- 用table可以輕易弄出整齊的格子
 
 
 
