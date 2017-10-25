@@ -16,4 +16,4 @@
 
 # css
 ### float
-- 當我們為父區塊設定overflow:auto或overflow:hidden的屬性後，我們就不需額外去clear掉float的效果了
+- 當我們為父區塊設定overflow:auto或overflow:hidden的屬性後，overflow會去抓自元素的邊界
