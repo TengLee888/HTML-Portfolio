@@ -23,12 +23,29 @@ header a:hover {
   text-decoration: none;
 }
 
+/* line 1, ../sass/modules/_button.scss */
+.profolioTitle, .teamMember .teamMemberTitle {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  margin: 0 auto;
+  background-color: #FF0048;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+/* line 23, ../sass/modules/_button.scss */
+.member h2, footer h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
 /* line 5, ../sass/partials/banner.scss */
 a {
   cursor: pointer;
 }
 
-/* line 10, ../sass/partials/banner.scss */
+/* line 8, ../sass/partials/banner.scss */
 .banner {
   display: flex;
   flex-direction: column;
@@ -39,29 +56,24 @@ a {
   background-image: url(../images/banner.png);
   background-size: cover;
 }
-/* line 21, ../sass/partials/banner.scss */
+/* line 17, ../sass/partials/banner.scss */
 .banner h1 {
   font-size: 50px;
   font-style: italic;
 }
-/* line 26, ../sass/partials/banner.scss */
+/* line 21, ../sass/partials/banner.scss */
 .banner h5 {
   letter-spacing: 3px;
 }
-/* line 30, ../sass/partials/banner.scss */
+/* line 24, ../sass/partials/banner.scss */
 .banner i {
   display: block;
   font-size: 1rem;
 }
 
-/* line 36, ../sass/partials/banner.scss */
+/* line 29, ../sass/partials/banner.scss */
 .profolioTitle {
-  color: #fff;
   width: 200px;
-  padding: 25px 0;
-  margin: 0 auto;
-  background-color: #FF0048;
-  letter-spacing: 3px;
 }
 
 /* line 5, ../sass/partials/profolio.scss */
@@ -81,37 +93,27 @@ a {
 .profolio .profolio-item {
   padding: 0;
 }
-/* line 22, ../sass/partials/profolio.scss */
+/* line 20, ../sass/partials/profolio.scss */
 .profolio .profolio-item img {
   width: 100%;
   height: auto;
 }
 
-/* line 4, ../sass/partials/teamMember.scss */
+/* line 5, ../sass/partials/teamMember.scss */
 .teamMember {
   background-color: #fff;
   padding-top: 100px;
   padding-bottom: 45px;
 }
-/* line 9, ../sass/partials/teamMember.scss */
-.teamMember .teamMemberTitle {
-  color: #fff;
-  font-size: 16px;
-  padding: 25px;
-  margin: 0;
-  text-align: center;
-  background-color: #FF0048;
-  letter-spacing: 3px;
-}
-/* line 20, ../sass/partials/teamMember.scss */
+/* line 12, ../sass/partials/teamMember.scss */
 .teamMember .teamMembersubTitle {
-  font-size: 30px;
   color: #FF0048;
+  font-size: 30px;
   margin: 50px;
   text-align: center;
   letter-spacing: 3px;
 }
-/* line 28, ../sass/partials/teamMember.scss */
+/* line 19, ../sass/partials/teamMember.scss */
 .teamMember a {
   display: block;
   color: #fff;
@@ -124,30 +126,28 @@ a {
 }
 
 @media screen and (min-width: 960px) {
-  /* line 41, ../sass/partials/teamMember.scss */
+  /* line 24, ../sass/partials/teamMember.scss */
   .container {
     width: 960px;
   }
 }
-/* line 49, ../sass/partials/teamMember.scss */
+/* line 30, ../sass/partials/teamMember.scss */
 .member {
   padding: 0;
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 54, ../sass/partials/teamMember.scss */
+/* line 34, ../sass/partials/teamMember.scss */
 .member img {
   width: 100%;
   height: auto;
 }
-/* line 59, ../sass/partials/teamMember.scss */
+/* line 38, ../sass/partials/teamMember.scss */
 .member h2 {
   color: #FF0048;
-  font-size: 50px;
-  font-weight: 300;
+  letter-spacing: 3px;
   margin-top: 20px;
   margin-bottom: 0;
-  letter-spacing: 3px;
 }
 
 /* line 5, ../sass/partials/footer.scss */
@@ -160,26 +160,21 @@ footer {
 @media screen and (min-width: 960px) {
   /* line 12, ../sass/partials/footer.scss */
   footer .article {
-    padding: 80px;
+    padding: 60px;
   }
 }
-/* line 17, ../sass/partials/footer.scss */
-footer h2 {
-  font-size: 50px;
-  font-weight: 300;
-}
-/* line 22, ../sass/partials/footer.scss */
+/* line 21, ../sass/partials/footer.scss */
 footer p {
   margin-bottom: 100px;
 }
 @media screen and (min-width: 576px) {
-  /* line 27, ../sass/partials/footer.scss */
+  /* line 26, ../sass/partials/footer.scss */
   footer .articleRight {
     margin-top: 200px;
     padding-bottom: 0;
   }
 }
-/* line 33, ../sass/partials/footer.scss */
+/* line 31, ../sass/partials/footer.scss */
 footer a {
   display: block;
   color: #000;
@@ -190,28 +185,28 @@ footer a {
   background-color: #fff;
   text-decoration: none;
 }
-/* line 42, ../sass/partials/footer.scss */
+/* line 33, ../sass/partials/footer.scss */
 footer a:hover {
   text-decoration: none;
   color: #FF0048;
 }
 
-/* line 51, ../sass/partials/footer.scss */
+/* line 42, ../sass/partials/footer.scss */
 .dot {
   margin: 60px;
   letter-spacing: 10px;
   text-align: center;
 }
 
-/* line 58, ../sass/partials/footer.scss */
+/* line 49, ../sass/partials/footer.scss */
 .copyRight {
   text-align: center;
 }
-/* line 61, ../sass/partials/footer.scss */
+/* line 52, ../sass/partials/footer.scss */
 .copyRight p {
   padding: 20px;
 }
-/* line 65, ../sass/partials/footer.scss */
+/* line 56, ../sass/partials/footer.scss */
 .copyRight span {
   color: #FF0048;
 }

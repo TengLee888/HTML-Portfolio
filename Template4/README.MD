@@ -1,6 +1,8 @@
 # HTML
 ### header
-- 用bootstrap的justify-content-between使東西靠左靠右，左右各加.col-sm-auto
+- 用bootstrap的justify-content-sm-between使logo靠左,nav靠右。
+- logo和nav左右各加.col-sm-auto，表示在media大於sm寬度以上，子元素(logo&nav)的寬度由內容決定
+- nav 設align-self-end：nav單獨靠下
 - margin 20px是為了手機版可以有上面的margin
 <br>
 

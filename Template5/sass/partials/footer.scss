@@ -1,6 +1,6 @@
 // Footer
 @import "modules/color";
-
+@import "modules/button";
 
 footer {
   background-image: url(../images/bg.jpg);
@@ -10,13 +10,12 @@ footer {
 
   @media screen and (min-width: 960px){
     .article{
-    padding: 80px;
+    padding: 60px;
     }
   }
 
   h2 {
-  font-size: 50px;
-  font-weight: 300;
+    @extend %h2Title
   }
 
   p {
@@ -29,16 +28,8 @@ footer {
       padding-bottom: 0;
     }
   }
-
   a {
-    display: block;
-    color: #000;
-    width: 210px;
-    padding: 10px 0;
-    margin: 20px auto;
-    text-align: center;
-    background-color: #fff;
-    text-decoration: none;
+    @include button(#000, #fff);
     &:hover{
       text-decoration: none;
       color: $pink;

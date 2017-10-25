@@ -17,7 +17,7 @@
 
 # css
 ### a
- - ```text-decoration: none;``` a前面才不會有點
+- 去除底線：```text-decoration: none;```
  <br>
 
 

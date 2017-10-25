@@ -1,42 +1,25 @@
 // teamMember
 @import "modules/color";
+@import "modules/button";
 
 .teamMember {
   background-color: #fff;
   padding-top: 100px;
   padding-bottom: 45px;
-
   .teamMemberTitle {
-    color: #fff;
-    font-size: 16px;
-    padding: 25px;
-    margin: 0;
-    text-align: center;
-    background-color:$pink;
-    letter-spacing: 3px;
+    @extend %whitePinkTitle;
   }
-
-
   .teamMembersubTitle {
-    font-size: 30px;
     color: $pink;
+    font-size: 30px;
     margin: 50px;
     text-align: center;
     letter-spacing: 3px;
   }
-
   a {
-    display: block;
-    color: #fff;
-    width: 210px;
-    padding: 10px 0;
-    margin: 20px auto;
-    text-align: center;
-    background-color: #000;
-    text-decoration: none;
+    @include button(#fff, #000);
   }
 }
-
 @media screen and (min-width:960px) {
   .container {
     width: 960px;
@@ -44,24 +27,19 @@
 }
 
 
-
-
 .member {
   padding: 0;
   margin-bottom: 20px;
   text-align: center;
-
   img {
     width: 100%;
     height: auto;
   }
-
   h2{
+    @extend %h2Title;
     color: $pink;
-    font-size: 50px;
-    font-weight: 300;
+    letter-spacing: 3px;
     margin-top: 20px;
     margin-bottom: 0;
-    letter-spacing: 3px;
   }
 }

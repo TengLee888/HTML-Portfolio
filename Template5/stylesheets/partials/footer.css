@@ -1,3 +1,9 @@
+/* line 23, ../../sass/modules/_button.scss */
+footer h2 {
+  font-size: 50px;
+  font-weight: 300;
+}
+
 /* line 5, ../../sass/partials/footer.scss */
 footer {
   background-image: url(../images/bg.jpg);
@@ -8,26 +14,21 @@ footer {
 @media screen and (min-width: 960px) {
   /* line 12, ../../sass/partials/footer.scss */
   footer .article {
-    padding: 80px;
+    padding: 60px;
   }
 }
-/* line 17, ../../sass/partials/footer.scss */
-footer h2 {
-  font-size: 50px;
-  font-weight: 300;
-}
-/* line 22, ../../sass/partials/footer.scss */
+/* line 21, ../../sass/partials/footer.scss */
 footer p {
   margin-bottom: 100px;
 }
 @media screen and (min-width: 576px) {
-  /* line 27, ../../sass/partials/footer.scss */
+  /* line 26, ../../sass/partials/footer.scss */
   footer .articleRight {
     margin-top: 200px;
     padding-bottom: 0;
   }
 }
-/* line 33, ../../sass/partials/footer.scss */
+/* line 31, ../../sass/partials/footer.scss */
 footer a {
   display: block;
   color: #000;
@@ -38,28 +39,28 @@ footer a {
   background-color: #fff;
   text-decoration: none;
 }
-/* line 42, ../../sass/partials/footer.scss */
+/* line 33, ../../sass/partials/footer.scss */
 footer a:hover {
   text-decoration: none;
   color: #FF0048;
 }
 
-/* line 51, ../../sass/partials/footer.scss */
+/* line 42, ../../sass/partials/footer.scss */
 .dot {
   margin: 60px;
   letter-spacing: 10px;
   text-align: center;
 }
 
-/* line 58, ../../sass/partials/footer.scss */
+/* line 49, ../../sass/partials/footer.scss */
 .copyRight {
   text-align: center;
 }
-/* line 61, ../../sass/partials/footer.scss */
+/* line 52, ../../sass/partials/footer.scss */
 .copyRight p {
   padding: 20px;
 }
-/* line 65, ../../sass/partials/footer.scss */
+/* line 56, ../../sass/partials/footer.scss */
 .copyRight span {
   color: #FF0048;
 }
