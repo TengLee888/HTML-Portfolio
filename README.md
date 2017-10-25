@@ -1,22 +1,3 @@
-
-### background
-- 越靠近螢幕，要寫在最前面，中間用逗號隔開
-- 位置用百分比代替
-- 結束時：零度是在右邊 90度是在上方
-
-線性漸層
-```
-background: -webkit-linear-gradient(90deg , black, purple)
-```
-
-逕向漸層
-background: -webkit-radial-gradient(ellipse , black, purple);
-background: -webkit-radial-gradient(circle , black, purple)
-- Ellipse (this is default):
-- 越先寫的顏色越在中間
-
-
-
 ## position
 - relative: 離開原來的位置，定為點為原來的位置
   - 原來的位置還佔空間，移動到的位置可視為浮上來不佔位置
@@ -264,6 +245,24 @@ This removes the negative margins from .row and the horizontal padding from all 
 
 ### Offsetting columns
 - Move columns to the right using .offset-md-* classes. These classes increase the left margin of a column by * columns
+
+
+
+## background
+- 越靠近螢幕，要寫在最前面，中間用逗號隔開
+- 位置用百分比代替
+- 結束時：零度是在右邊 90度是在上方
+
+線性漸層
+```
+background: -webkit-linear-gradient(90deg , black, purple)
+```
+
+逕向漸層
+background: -webkit-radial-gradient(ellipse , black, purple);
+background: -webkit-radial-gradient(circle , black, purple)
+- Ellipse (this is default):
+- 越先寫的顏色越在中間
 
 
 
