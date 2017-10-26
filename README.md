@@ -1,123 +1,24 @@
+# 名詞解釋＆心得
 ## position
-- relative: 離開原來的位置，定為點為原來的位置
+
+### relative
+- 離開原來的位置，定為點為原來的位置
   - 原來的位置還佔空間，移動到的位置可視為浮上來不佔位置
   - 位移參考的是原來位置的四個邊
   https://codepen.io/TengLee/pen/PKEQLZ
 
-https://codepen.io/TengLee/pen/PKEQLZ
-- absolute: 往父層找定位點，除了static以外，relative, absolute, fixed都可當定位點
+
+
+
+### abosolute
 https://codepen.io/TengLee/pen/YrBvop
-
-
-
-## abosolute
+- 往父層找定位點，除了static以外，relative, absolute, fixed都可當定位點
 五個步驟
 1. 先從流浮上
 2. 找父元素有無定位設定，除了static以外，relative, absolute, fixed都可定位
 3. 當父元素有無定位設定會一直定位到window
 4. 捲軸往下卷absolute會留在最一開始window的位置
 https://codepen.io/TengLee/pen/braRXj
-
-
-
-## 水平置中
-- block：margin-left, margin-right:auto
-- inline, inline-block: 父階層用text-align: center
-
-
-
-## 垂直置中
-### 偽元素
-- 適用: inline, inline-block
-- 原理是偽元素會使div的vertical-align:center，所以div的base-line垂直置中，導致inline, inline-blockc垂直置中
-- 偽元素本身就當作是一個「可自由調整大小的字或圖(inline元素)」
-- 故inline多行會失敗
-- 可修改inline和inline-block的vertical-align做變化
-- 做法：
-```
-&::before {
-content: '';
-display:inline-block;
-height: 100%;
-vertical-align: middle;
-}
-```
-https://codepen.io/TengLee/pen/dzJvNz
-
-
-### abosolute margin:auto 上下左右為0
-- 適用:
-  - block(設定寬高)
-  - inline-block(不可以沒有高，可以設固定寬高，fit-content, min-content, max-content)
-- 做法：
-```
-.div {
-  position: relative;
-  div {
-    position: absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin: auto;
-  }
-}
-```
-- 上下左右＝0
-- margin = auto
-  - 當沒有設margin auto 變成抓不到邊界因此取預設值left=0, top=0移到左上
-- 父層不能是static
-https://codepen.io/TengLee/pen/braRXj
-
-
-### line-height
-- 適用:
-  - inline
-  - inline-block(height可設auto)
-- 多行文字會失敗
-- 做法：line-height的高設得跟div一樣高
-
-
-### transform:translateY(-50%)
-- 適用:全部
-- 做法：
-```
-position: relative;
-top:50%;
-transform:translateY(-50%);
-```
-
-
-### flex
-- 做法：父元素設定如下
-```
-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-```
-https://codepen.io/TengLee/pen/YxaaMX
-
-
-
-
-### calc(), table
-
-
-
-### 多個inline-block 水平垂直置中 偽元素
-- 子原素皆設verticle-align;
-- 偽元素之必要
-```
-::before {
-content: '';
-display:inline-block;
-height: 100%;
-vertical-align: middle;
-}
-```
-https://codepen.io/TengLee/pen/vJppdR
 
 
 
@@ -330,6 +231,126 @@ a {
 
 
 
+## mixin
+- 就是函式，可以帶入引數和變數
+- 幫你記住很多段落的程式碼
+- 帶入變數的特性，來編譯出我們要的程式碼。
+- @mixin是將程式碼帶入到對應的class去，同時可帶入變數。
+
+
+
+## extend
+- 如果你每個段落的CSS程式碼如果都長得一模一樣， 那你就把這段程式馬提取出來，每當需要用到時用@extend來呼叫
+- 主要是拿來合併相同程式碼用的
+- @extend則是藉由class合併，並吃到共通樣式，但沒辦法帶入變數。
+- 所以如果你的樣式都固定不變的，不會需要用參數帶進去改變樣式的話，那就用@extend，程式碼會比較少些。
+
+
+
+# 有什麼狀況？？
+
+
+
+## 水平置中
+- block：margin-left, margin-right:auto
+- inline, inline-block: 父階層用text-align: center
+
+
+
+## 垂直置中
+### 偽元素
+- 適用: inline, inline-block
+- 原理是偽元素會使div的vertical-align:center，所以div的base-line垂直置中，導致inline, inline-blockc垂直置中
+- 偽元素本身就當作是一個「可自由調整大小的字或圖(inline元素)」
+- 故inline多行會失敗
+- 可修改inline和inline-block的vertical-align做變化
+- 做法：
+```
+&::before {
+content: '';
+display:inline-block;
+height: 100%;
+vertical-align: middle;
+}
+```
+https://codepen.io/TengLee/pen/dzJvNz
+
+
+### abosolute margin:auto 上下左右為0
+- 適用:
+  - block(設定寬高)
+  - inline-block(不可以沒有高，可以設固定寬高，fit-content, min-content, max-content)
+- 做法：
+```
+.div {
+  position: relative;
+  div {
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+  }
+}
+```
+- 上下左右＝0
+- margin = auto
+  - 當沒有設margin auto 變成抓不到邊界因此取預設值left=0, top=0移到左上
+- 父層不能是static
+https://codepen.io/TengLee/pen/braRXj
+
+
+### line-height
+- 適用:
+  - inline
+  - inline-block(height可設auto)
+- 多行文字會失敗
+- 做法：line-height的高設得跟div一樣高
+
+
+### transform:translateY(-50%)
+- 適用:全部
+- 做法：
+```
+position: relative;
+top:50%;
+transform:translateY(-50%);
+```
+
+
+### flex
+- 做法：父元素設定如下
+```
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+https://codepen.io/TengLee/pen/YxaaMX
+
+
+
+### calc(), table
+
+
+
+## 多個inline-block 水平垂直置中 偽元素
+- 子原素皆設verticle-align;
+- 偽元素之必要
+```
+::before {
+content: '';
+display:inline-block;
+height: 100%;
+vertical-align: middle;
+}
+```
+https://codepen.io/TengLee/pen/vJppdR
+
+
+
 ## 整齊的格子
 - 用table可以輕易弄出整齊的格子
 
@@ -376,18 +397,44 @@ https://codepen.io/TengLee/pen/BdJQWy
 http://dancewing.pixnet.net/blog/post/24572377-%E8%A7%A3%E6%B1%BAimg%E4%B8%8B%E7%9A%84%E5%A4%9A%E9%A4%98%E7%A9%BA%E7%99%BD
 
 
-## mixin
-- 就是函式，可以帶入引數和變數
-- 幫你記住很多段落的程式碼
-- 帶入變數的特性，來編譯出我們要的程式碼。
-- @mixin是將程式碼帶入到對應的class去，同時可帶入變數。
 
-## extend
-- 如果你每個段落的CSS程式碼如果都長得一模一樣， 那你就把這段程式馬提取出來，每當需要用到時用@extend來呼叫
-- 主要是拿來合併相同程式碼用的
-- @extend則是藉由class合併，並吃到共通樣式，但沒辦法帶入變數。
-- 所以如果你的樣式都固定不變的，不會需要用參數帶進去改變樣式的話，那就用@extend，程式碼會比較少些。
+## 排版-變動寬度＆固定寬度
+- 當一個父元素div為變動寬度，他的子元素一為固定寬，另一為變動寬度，除了用grid system，還有以下三種方法：
+https://codepen.io/TengLee/pen/OxKvxV
+- flex, calc(), float搭配margin
+```
+.flex {
+  .post {
+  display: flex;
+  }
+  .postDetail {
+    flex: 1;
+  }
+}
 
+
+.calc {
+  .time {
+    display: inline-block;    
+    vertical-align: top;
+  }
+  .postDetail{
+    display: inline-block;
+    width: calc(100% - 80px);
+  }
+}
+
+
+
+.floatMargin {
+  .time {
+    float: left;
+  }
+  .postDetail{
+    margin-left:60px;
+  }
+}
+```
 
 -
 -
