@@ -1,143 +1,120 @@
-* {
-  box-shadow: 0 0 1px red;
+*{
+  /* border: 1px red solid; */
 }
 
 
-body {
+body{
   margin: 0;
 }
 
+
 a {
-  cursor: pointer;
   text-decoration: none;
+  color: #000;
+}
+
+p, a, span{
+  font-family: sans-serif;
 }
 
 
-.container {
-  width: 1020px;
+footer p{
+  color: #cfcfcf
+}
+
+
+.dark_grey{
+  color: #303132;
+}
+
+
+.container{
+  width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
 
-p {
-    color: #4E4F50;
-    font-family: sans-serif;
-}
-
-
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-/*<!--  Navigation bar  -->*/
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-
-
-header {
+header{
   background-color: #535152;
 }
 
 
-nav {
+.narbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 
-.navBrand {
-  padding-top: 8px;
+header img{
+  height: 100%;
 }
 
 
-nav ul {
-  display: flex;
-  flex: 1;
-  padding: 0;
-  list-style: none;
-}
-
-
-nav ul li {
-  flex: 1;
-  text-align: center;
-}
-
-
-nav ul li a {
-  font-family: sans-serif;
+.light_grey_color, .nav a{
   color: #cfcfcf;
-  font-size: 16px;
 }
 
 
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-/*<!--  Content  -->*/
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
 
-
-.banner {
+.banner{
   position: relative;
-  background-image: url('img/cover.jpg');
-  height: 82vh;
-  background-size: cover;
-  background-position: center;
+  height: 80vh;
+  /* background: url("img/cover.jpg"); */
+  /* background-size: cover; */
+  background: url("img/cover.jpg") center/cover no-repeat;
 }
 
-
-.banner div {
+.center_box{
   position: absolute;
-  background: rgba(255,255,255,0.5);
-  top: 50%;
-  left: 50%;
-  margin-top: -111px;
-  margin-left: -300px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 600px;
+  height: 200px;
+  background-color: #ffffff80;
+  text-align: center;
 }
 
 
-.centerBoxTile {
-  margin: 20px;
-  text-align: center;
-  color: #303132;
-  font-family: serif;
+.center_box h1{
+  /* display: inline-block; */
+  margin: 30px 0;
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 
 
-.shopNow{
-  width: 300px;
-  padding: 10px;
-  margin: 8px auto 15px;
+.center_box span{
+  padding: 10px 80px;
   background-color: #303132;
-  text-align: center;
   color: #E7E7E7;
-  font-family: sans-serif;
   font-weight: 100;
   font-size: 20px;
 }
 
-
-.freeShipping {
+.free_shipping{
+  line-height: 50px;
   margin: 0;
-  background-color: #E3E3E3;
   text-align: center;
+  background-color: #E3E3E3;
   font-size: 15px;
   letter-spacing: 5px;
   font-weight: 100;
-  line-height: 50px;
 }
 
 
-
-
-.yearRoundBox {
-  padding: 80px;
+.content_group{
   text-align: center;
 }
 
 
-.yearRound {
-  margin: 0;
+.content_group h2{
+  margin-top: 100px;
   color: #303132;
   font-family: serif;
   font-size: 40px;
@@ -145,104 +122,76 @@ nav ul li a {
   letter-spacing: 15px;
 }
 
-
-.dash {
-  margin: 20px;
+.dash{
+  margin: 20px 0 40px;
 }
-
-
-.mustHave {
-  margin-top: 2rem;
+.content_group .must_have{
+  margin-bottom: 100px;
   font-size: 20px;
   letter-spacing: 10px;
   font-weight: 100;
 }
 
+.product_box_outer{
+  /* width: 960px; */
+  margin: 0 auto 100px;
 
-.flex {
+}
+.product_box{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 -5px;
+}
+.product{
+ margin: 0 5px;
 }
 
 
-.merchandise img {
-  width: 330px;
-  height: auto;
-}
-
-
-.darkBg {
-  background-color: #303132;
-}
-.greyBg {
-  background-color: rgb(231, 227, 224);
-}
-
-
-.description  {
-  text-align: center;
-  color: #E7E7E7;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-  }
-
-
-
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-/*<!--  Footer  -->*/
-/*<!--~~~~~~~~~~~~~~~~~~-->*/
-
-
-footer {
+footer{
   background-color: #535152;
-  padding: 80px 0 60px;
-  margin-top: 80px;
+  padding: 100px 0 70px;
 }
 
-
-footer p {
-  margin: 5px 0;
-  color: #cfcfcf;
-  font-size: 15px;
-  font-weight: 100;
+.footer_box{
+  display: flex;
+  justify-content: space-around;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.email {
-  flex: 1;
-  margin: 0 100px;
+.email form{
+  text-align: right;
 }
 
-
-.logolink, .contact {
-  margin: 0 40px;
-  text-align: center;
-}
-
-
-#email {
-  margin: 0 auto;
-  width: 100%;
+.input_email{
+  width: 330px;
   height: 30px;
   border: 2px solid #cfcfcf;
   background-color: transparent;
-  box-sizing: border-box;
 }
 
-#button {
-  float: right;
+.input_button{
+  margin-top: 10px;
   padding: 10px;
-  margin: 5px 3px;
+  background-color: #cfcfcf;
   border: 0;
-  background-color: #d3d3d3;
   color: #4E4F50;
   font-size: 15px;
   border-radius: 1px;
 }
 
+.email ::placeholder {
+  color: #cfcfcf;
+  font-size: 15px;
+}
 
-.allRight {
+
+.info{
   text-align: center;
-  margin-top: 50px;
+}
+
+.copyright{
+  margin-top: 100px;
+  text-align: center;
 }

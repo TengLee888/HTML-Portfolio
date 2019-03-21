@@ -1,0 +1,52 @@
+/* line 7, ../../sass/partials/header.scss */
+.contact {
+  text-align: right;
+}
+
+/* line 10, ../../sass/partials/header.scss */
+.header_group {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 13, ../../sass/partials/header.scss */
+.header_group img {
+  height: 100%;
+}
+
+/* line 21, ../../sass/partials/header.scss */
+.login_group > div {
+  display: inline-block;
+}
+/* line 24, ../../sass/partials/header.scss */
+.login_group button {
+  color: #ffffff;
+  background-color: #F90000;
+  line-height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* line 35, ../../sass/partials/header.scss */
+.menu_group li {
+  display: inline-block;
+}
+/* line 38, ../../sass/partials/header.scss */
+.menu_group ul {
+  font-size: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  padding: 20px 0;
+}
+/* line 44, ../../sass/partials/header.scss */
+.menu_group ul li {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 20px;
+  text-align: center;
+  border-left: 1px solid grey;
+}
+/* line 50, ../../sass/partials/header.scss */
+.menu_group ul li a {
+  font-size: 16px;
+}

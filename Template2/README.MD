@@ -33,11 +33,33 @@ width: 600px;
 <br>
 
 
+
+## input
+input有好幾個屬性
+Type：決定是什麼input
+value: 填了就有預設值
+name: 會跟form data一起交，作為這個Form data的名稱
+
+
+
+###button
+給你一個按鈕，沒有default behaviors
+
+### sumit
+給你一個按鈕
+
+
 # css
+##background
+要一次聲明多個屬性，<bg-size> 只能紧接着 <position> 出现，以"/"分割，如： "center/cover"
+
 ###background-size: cover
-- 依比例縮小圖片填滿畫面
+- 依比例圖片填滿畫面，依寬度，長度超過則會被裁切
 <br>
 
+
+###background-attachment
+- fixed就是固定在畫面，不隨畫面滾動滾動
 
 ### background-position: center
 - 當畫面縮小圖片還是置中

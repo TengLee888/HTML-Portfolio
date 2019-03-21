@@ -247,6 +247,16 @@ a {
 
 
 
+## 權重
+- important! > inline-style > id > class > element
+- eg:
+  - form input[type=email] 12分
+  - li.class[nth:child] 21分
+
+
+
+
+
 # 有什麼狀況？？
 
 
@@ -436,18 +446,6 @@ https://codepen.io/TengLee/pen/OxKvxV
 }
 ```
 
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
+
+## 在瀏覽器修改
+- document.designMode = 'on'

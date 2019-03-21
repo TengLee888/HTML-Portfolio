@@ -1,0 +1,56 @@
+@import "modules/color";
+
+* {
+  // border: 1px solid red;
+}
+
+.contact {
+  text-align: right;
+}
+.header_group {
+  display: flex;
+  justify-content: space-between;
+  img {
+    height: 100%;
+  }
+}
+
+
+.login_group {
+
+  > div{
+    display: inline-block;
+  }
+  button{
+    color: #ffffff;
+    background-color: $main_red;
+    line-height: 40px;
+    border-radius: 5px;
+    border: none;
+  }
+}
+
+
+.menu_group{
+  li {
+    display: inline-block;
+  }
+  ul {
+    font-size: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    padding: 20px 0;
+    li {
+      display: inline-block;
+      font-size: 1rem;
+      padding: 0 20px;
+      text-align: center;
+      border-left: 1px solid grey;
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+
+}
